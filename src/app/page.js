@@ -8,7 +8,6 @@ import { calculateEstimate } from "../lib/pricing";
 import { getDistanceAndTime } from "../lib/distance";
 import { matchProviders } from "../lib/providers";
 import styles from "../styles/booking.module.css";
-import TapHeader from "../components/TapHeader";
 
 /* =========================
    Initial Form State
@@ -134,7 +133,6 @@ export default function Home() {
   };
 
   return (
-  <TapHeader />
     <main className={styles.container}>
       <h1 className={styles.title}>
   Smart Transport Booking
