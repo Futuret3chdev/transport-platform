@@ -134,10 +134,13 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
-      <h1 className={styles.title}>Instant Transport Booking</h1>
-      <p className={styles.subtitle}>
-        Real-time estimates, transparent pricing, instant job submission
-      </p>
+      <h1 className={styles.title}>
+  Smart Transport Booking
+</h1>
+<p className={styles.subtitle}>
+  Powered by TapPackages — real-time pricing & verified providers
+</p>
+
 
       <div className={styles.layout}>
         <FiltersPanel

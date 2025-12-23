@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import styles from "../styles/booking.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Instant Transport Booking",
-  description: "Real-time transport booking platform",
+  title: "TapPackages – Smart Transport Booking",
+  description: "Instant transport pricing and provider matching",
 };
 
 export default function RootLayout({ children }) {
@@ -22,10 +23,22 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/* Google Maps / Places */}
-<Script
-  src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places&v=beta&loading=async`}
-  strategy="afterInteractive"
-/>
+        <Script
+          src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places&v=beta&loading=async`}
+          strategy="afterInteractive"
+        />
+
+        {/* ===== Header / Brand Bar ===== */}
+        <header className={styles.brandHeader}>
+          <div className={styles.brandInner}>
+            <img
+              src="/tplogo.png"
+              alt="TapPackages"
+              className={styles.brandLogo}
+            />
+            <span className={styles.brandName}>TapPackages</span>
+          </div>
+        </header>
 
         {children}
       </body>
