@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
               alt="TapPackages"
               className={styles.brandLogo}
             />
-            <span className={styles.brandName}>TapPackages</span>
+            <span className={styles.brandName}></span>
           </div>
         </header>
 
