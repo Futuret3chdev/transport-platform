@@ -337,6 +337,123 @@
   letter-spacing: 0.2px;
 }
 
+/* =========================
+   TAP HEADER
+========================= */
+
+.tapHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px;
+  border-bottom: 1px solid #eee;
+  background: #ffffff;
+}
+
+.tapHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tapBrand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.tapName {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #0c1f81;
+}
+
+.tapProduct {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tapSub {
+  font-size: 12px;
+  color: #777;
+}
+
+/* =========================
+   TAP SWITCHER
+========================= */
+
+.tapNav {
+  display: flex;
+  gap: 6px;
+  background: #f4f6ff;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.tapNavItem {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+}
+
+.tapNavItem:hover {
+  background: rgba(12, 31, 129, 0.08);
+}
+
+.tapNavActive {
+  background: #0c1f81;
+  color: white;
+}
+
+/* =========================
+   AUTH BUTTONS
+========================= */
+
+.tapHeaderRight {
+  display: flex;
+  gap: 10px;
+}
+
+.tapLogin {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tapSignup {
+  background: #0c1f81;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tapSignup:hover {
+  background: #08165f;
+}
+
+/* =========================
+   MOBILE HEADER
+========================= */
+
+@media (max-width: 900px) {
+  .tapNav {
+    display: none;
+  }
+}
+
+
 
 
 @media (max-width: 900px) {
