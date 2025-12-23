@@ -138,7 +138,7 @@ export default function Home() {
   Smart Transport Booking
 </h1>
 <p className={styles.subtitle}>
-  Powered by TapPackages — real-time pricing & verified providers
+  TapSystems — real-time pricing & verified providers
 </p>
 
 
